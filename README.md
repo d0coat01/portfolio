@@ -11,5 +11,14 @@ OR
 1. Simply Download the zip file of this project.
 2. Open `portfolio/index.html`.
 
-## Credits
+## Code Navigation
+- `css` : `main.css` has the bulk of the styles for this site. `responsive.css` contains breakpoints to accomodate larger screen sizes.
+- `img` : contains reformatted images in two sizes (small/medium).
+- `images_src` : contains original images.
+- `svg` : has all svg images.
+
+## Sources
 I used svg icons from [https://www.flaticon.com/](https://www.flaticon.com/) for my project showcase images.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/) License 2018. This code may be shared, copied, and changed freely.
