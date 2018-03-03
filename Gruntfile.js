@@ -23,12 +23,12 @@ module.exports = function(grunt) {
             */
             width: "400px",
             name: "small",
-            quality: 40
+            quality: 100
           },
           {
             width: "600px",
             name: "medium",
-            quality: 40
+            quality: 100
           }
           ]
         },
