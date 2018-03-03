@@ -1,0 +1,27 @@
+/* First Breakpoint */
+
+@media screen and (min-width:700px) {
+
+	/* Two column grid for showcase projects */
+
+	#showcase {
+		text-align: initial;
+	}
+
+	#showcase .showcase__project {
+		width: 50%;
+	}
+
+}
+
+/* Second Breakpoint */
+
+@media screen and (min-width:1000px) {
+
+	/* Three column grid for showcase projects */
+
+	#showcase .showcase__project {
+		width: 33%;
+	}
+
+}

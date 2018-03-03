@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "description": "A portfolio of my Udacity projects.",
+  "version": "1.1.0",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-mkdir": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-responsive-images": "^1.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0coat01/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "d0coat01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d0coat01/portfolio/issues"
+  },
+  "homepage": "https://github.com/d0coat01/portfolio#readme"
+}
