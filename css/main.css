@@ -18,9 +18,10 @@ h1, h2, h3, h4, h5 {
 header, section, footer, article, main{
 	width:100%;
 	display:inline-block;
+}
+header, section, main {
 	border-bottom: 2px solid #7d97ad;
 }
-
 /* Header Section */
 
 header {
