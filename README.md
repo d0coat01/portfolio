@@ -13,9 +13,10 @@ OR
 
 ## Code Navigation
 - `css` : `main.css` has the bulk of the styles for this site. `responsive.css` contains breakpoints to accomodate larger screen sizes.
-- `img` : contains reformatted images in two sizes (small/medium).
+- `img` : contains reformatted images in two sizes (small/medium). I used Grunt to resize the image(s).
 - `images_src` : contains original images.
 - `svg` : has all svg images.
+
 
 ## Sources
 I used svg icons from [https://www.flaticon.com/](https://www.flaticon.com/) for my project showcase images.
