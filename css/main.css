@@ -10,16 +10,15 @@ h1, h2, h3, h4, h5 {
   margin: 0; 
 }
 #container {
-	display:flex;
+	display: flex;
 	flex-wrap: wrap;
 	max-width: 1000px;
 	margin :0 auto;
 }
-header, section, footer, article, main{
+header, section, footer, article{
 	width:100%;
-	display:inline-block;
 }
-header, section, main {
+header, section {
 	border-bottom: 2px solid #7d97ad;
 }
 /* Header Section */
@@ -29,13 +28,11 @@ header {
 }
 
 .udacity_logo img {
-	display: inline-block;
 	width: 80px;
 }
 
 header aside {
 	vertical-align: top;
-    display: inline-block;
     text-align: right;
     float: right;
 }
@@ -67,12 +64,9 @@ header .job_title {
 
 /* Showcase section */
 
-#showcase {
-	text-align: center;
-}
-
-#showcase .showcase__header {
+.showcase__header {
 	color: #7d97ad;
+	width: 100%;
     text-transform: uppercase;
     padding: 0 0 20px 0;
     text-align: center;
@@ -80,7 +74,6 @@ header .job_title {
 
 .showcase__project {
 	min-width: 100px;
-	display: inline-block;
 	text-align: center;
 	overflow-wrap: break-word;
 	vertical-align: top;

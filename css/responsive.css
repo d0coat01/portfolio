@@ -4,11 +4,7 @@
 
 	/* Two column grid for showcase projects */
 
-	#showcase {
-		text-align: initial;
-	}
-
-	#showcase .showcase__project {
+	.showcase__project {
 		width: 50%;
 	}
 
@@ -20,7 +16,7 @@
 
 	/* Three column grid for showcase projects */
 
-	#showcase .showcase__project {
+	.showcase__project {
 		width: 33%;
 	}
 
