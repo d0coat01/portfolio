@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Daniel's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
-  <body id="container">
+  <body class="container">
     <header>
-      <picture class="udacity_logo">
+      <picture class="header__logo">
         <img alt="Udacity Logo" src="svg/udacity.svg"/>
       </picture>
-      <aside>
+      <div class="header__info">
         <h1 class="name">Daniel Coats</h1>
         <h2 class="job_title">Web Developer</h2>
-      </aside>
+      </div>
     </header>
-    <!-- TODO: highlight section -->
-    <section id="highlight">
-      <a href="https://www.linkedin.com/in/daniel-coats-6865503a/" target="_blank">
+    <section class="highlight">
+      <a href="https://www.linkedin.com/in/daniel-coats-6865503a/" target="_blank" title="LinkedIn Profile">
        <picture>
         <source media="(max-width: 600px)" srcset="img/turtle-surfer-small.jpg">
         <img alt="World's First Turtle Surfer" src="img/turtle-surfer-medium.jpg">
@@ -29,33 +28,34 @@
       </a>
       <p>Hello! I am a full stack web developer living in the San Francisco Bay Area. Here is some of my work :). Click above to visit my LinkedIn account!</p>
     </section>
-    <!-- TODO: small showcase section -->
     <h1 class="showcase__header">Featured Work</h1>
-    <article class="showcase__project">
+    <section class="showcase">
+     <article class="showcase__project">
         <picture>
           <img alt="Movie Project in Python" src="svg/3d-glasses.svg" />
         </picture>
         <h2>Movie Trailers</h2>
         <p>
-          <a href="https://github.com/d0coat01/MovieWebSite" target="_blank">https://github.com/d0coat01/MovieWebSite</a>
+          <a href="https://github.com/d0coat01/MovieWebSite" target="_blank" title="Movie Website">https://github.com/d0coat01/MovieWebSite</a>
         </p>
-    </article><article class="showcase__project">
+     </article><article class="showcase__project">
         <picture>
           <img alt="Portfolio" src="svg/shopping-bag.svg" />
         </picture>
         <h2>Portfolio</h2>
         <p>
-          <a href="https://github.com/d0coat01/portfolio" target="_blank">https://github.com/d0coat01/portfolio</a>
+          <a href="https://github.com/d0coat01/portfolio" target="_blank" title="Portfolio">https://github.com/d0coat01/portfolio</a>
         </p>
-    </article><article class="showcase__project">
+     </article><article class="showcase__project">
         <picture>
           <img alt="IPCStat" src="svg/pharmacy.svg" />
         </picture>
         <h2>IPCStat</h2>
         <p>
-          <a href="http://www.danielcoats.info/projects/idspc/" target="_blank">http://www.danielcoats.info/projects/idspc/</a>
+          <a href="http://www.danielcoats.info/projects/idspc/" target="_blank" title="IDSPC">http://www.danielcoats.info/projects/idspc/</a>
         </p>
-    </article>
-    <footer id="credits">Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></footer>
+     </article>
+    </section>
+    <footer class="credits">Icons made by <a href="https://www.flaticon.com/authors/darius-dan" target="_blank" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></footer>
   </body>
 </html>

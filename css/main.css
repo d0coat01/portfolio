@@ -1,6 +1,6 @@
 
 body {
-	font-family: 'BioRhyme', serif;
+	font-family: BioRhyme, Lucida Console, serif;
 	font-size: 16px;
 	color: #2d3c49;
 	margin: 0;
@@ -9,38 +9,35 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0; 
 }
-#container {
+
+.container {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 1000px;
-	margin :0 auto;
+	margin: 0 auto;
 }
 header, section, footer, article{
-	width:100%;
+	width: 100%;
 }
 header, section {
 	border-bottom: 2px solid #7d97ad;
 }
+
 /* Header Section */
 
 header {
 	margin: 5px 0;
+	display: flex;
+	justify-content: space-between;
 }
 
-.udacity_logo img {
+.header__logo img {
 	width: 80px;
 }
 
-header aside {
-	vertical-align: top;
-    text-align: right;
-    float: right;
+header .header__info {
+	text-align: right;
 }
-
-header aside:after {
-	clear: both;
-}
-
 header .name {
 	text-transform: uppercase;
 }
@@ -51,18 +48,30 @@ header .job_title {
 
 /* Highlight Section */
 
-#highlight {
-	text-align: center;
+.highlight {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#highlight img {
+.highlight img {
 	width: 100%;
-	max-width: 800px;
-	max-height: 400px;
-	cursor:pointer;
+	max-width: 600px;
+	cursor: pointer;
+}
+
+.highlight p {
+	max-width: 600px;
+	text-align:center;
 }
 
 /* Showcase section */
+
+.showcase {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
 
 .showcase__header {
 	color: #7d97ad;
@@ -80,7 +89,7 @@ header .job_title {
 }
 
 .showcase__project img {
-	max-width: 200px;
+	max-width: 150px;
 }
 
 .showcase__project h2 {
@@ -89,6 +98,6 @@ header .job_title {
 
 /* Image Credits */
 
-#credits {
+.credits {
 	text-align: center;
 }

@@ -4,6 +4,10 @@
 
 	/* Two column grid for showcase projects */
 
+	.showcase {
+		flex-direction: row;
+	}
+
 	.showcase__project {
 		width: 50%;
 	}
@@ -15,7 +19,7 @@
 @media screen and (min-width:1000px) {
 
 	/* Three column grid for showcase projects */
-
+	
 	.showcase__project {
 		width: 33%;
 	}
