@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             quality: 100
           },
           {
-            width: "600px",
+            width: "800px",
             name: "medium",
             quality: 100
           }
