@@ -6,13 +6,14 @@
   "dependencies": {
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-mkdir": "^1.0.0"
+    "grunt-mkdir": "^1.0.0",
+    "harp": "*"
   },
   "devDependencies": {
     "grunt-responsive-images": "^1.10.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "harp server --port $PORT"
   },
   "repository": {
     "type": "git",
