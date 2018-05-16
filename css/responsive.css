@@ -1,7 +1,12 @@
 /* First Breakpoint */
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:800px) {
 
+	/* Two column grid for skills */
+
+	#skills {
+		flex-direction: row;
+	}
 	/* Two column grid for showcase projects */
 
 	.showcase {
@@ -9,7 +14,7 @@
 	}
 
 	.showcase__project {
-		width: 50%;
+		width: 33%;
 	}
 
 }
@@ -19,7 +24,7 @@
 @media screen and (min-width:1000px) {
 
 	/* Three column grid for showcase projects */
-	
+
 	.showcase__project {
 		width: 33%;
 	}

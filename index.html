@@ -8,26 +8,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BioRhyme">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body class="container">
     <header>
+    </header>
+    <section class="highlight">
       <picture class="header__logo">
         <img alt="Picture of Daniel" src="img/profile-tiny.jpg"/>
       </picture>
-      <div class="header__info">
+      <div>
         <h1 class="name">Daniel Coats</h1>
         <h2 class="job_title">Web Developer</h2>
       </div>
-    </header>
-    <section class="highlight">
-      <a href="https://www.linkedin.com/in/daniel-coats-6865503a/" target="_blank" title="LinkedIn Profile">
-       <picture>
-        <source media="(max-width: 600px)" srcset="img/turtle-surfer-small.jpg">
-        <img alt="World's First Turtle Surfer" src="img/turtle-surfer-medium.jpg">
-       </picture>
-      </a>
-<p>I've been developing web applications from scratch for the past 5 years. I take pride in creating performant, clean, and maintainable code while always keeping a lookout for new and innovative ideas.</p>
-      </section>
+      <p>I've been developing web applications from scratch for the past 5 years. I take pride in creating performant, clean, and maintainable code while always keeping a lookout for new and innovative ideas.</p>
+    </section>
+    <section id="skills">
+      <div class="skill" v-for="skill in skills">
+        <div class="skill__icon">
+          <i class="fa-5x" v-bind:class="skill.icon"></i>
+          <h3 class="skill__name">{{skill.name}}</h3>
+        </div>
+        <div class="skill__details">
+          <div class="skill__details-item">
+            <span class="skill__detail-name">Experience:</span>
+            <span class="skill__detail">{{skill.experience}}</span>
+          </div>
+          <div class="skill__details-item" v-if="skill.tools.length > 0">
+            <h4>Tools</h4>
+            <p>
+              <span v-for="(tool, t_index) in skill.tools">{{tool.name}}<span v-if="t_index < (skill.tools.length - 1)">, </span>
+
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <h1 class="showcase__header">Featured Work</h1>
     <section class="showcase">
      <article class="showcase__project">
